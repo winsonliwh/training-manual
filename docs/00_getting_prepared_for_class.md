@@ -9,7 +9,7 @@ Here are some links you should know to getting support or prepared before the cl
 For this class, we will use zoom for our meeting:
 
 - Here is the class name list for showing your zoom breakout room number and your student ID.
-[http://class1.winson.li](http://class1.winson.li])
+[http://class1.winson.li](http://class1.winson.li)
 - Also you can find your role in Zoom Breakout Room, such as Leader, Co-Leader. Blank means participant.
 - Please change your name in zoom "Participants" for letting your leaders knows which room will you join when you are disconnect zoom and back.
 - This is name convention: (room, student ID) Name eg 
