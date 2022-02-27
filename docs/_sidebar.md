@@ -1,4 +1,5 @@
 - Getting Started
+  - [Getting Prepared for Class](00_getting_prepared_for_class.md)
   - [Getting Ready for Class](01_getting_ready_for_class.md)
   - [Getting Started](02_getting_started.md)
   - [GitHub Flow](03_github_flow.md)
