@@ -23,7 +23,7 @@ For this class, we use www.menti.com to get your answer for questions / polls / 
  [menti.com with code 5137 9675](https://www.menti.com/scoof3ghqa)
  - Or you can visit [www.menti.com](https://www.menti.com/) and input the code (5137 9675) manually after open the web page.
  - It is highly recommend to use mobile to scran below QR Code.
-  
+ ![menti.com with code 5137 9675 QR Code](./img/qr-menti-class1.png)
 
 
 ---
