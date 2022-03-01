@@ -1,4 +1,4 @@
-## Getting prepared for class
+## Getting prepared for class1
 
 Here are some links you should know to getting support or prepared before the class.
 
