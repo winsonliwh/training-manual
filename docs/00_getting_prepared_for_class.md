@@ -2,7 +2,7 @@
 
 ## Who are suitable to join?
 
-This course is designed for beginner of Git & GitHub and assumed student who don't have any experience in Git & GitHub. If you know Git command such as git branch, git checkout, git merge, you can pay less attention in day1 since we will go though Git command in 1st day. If you would like to go though approval process, 2nd day morning will be suitable for you. Also you can find blow agenda for which topic are interested.
+This course is designed for beginner of Git & GitHub and assumed student who don't have any experience in Git & GitHub. If you know Git command such as git branch, git checkout, git merge, you can save attention in day1 since we will go though Git command in 1st day. If you would like to go though approval process with teammates, 2nd day morning will be suitable for you. Also you can find blow agenda for which topic are interested.
 
 ### Learning Objectives of Git
 - Explain Git and its core features.
@@ -28,13 +28,10 @@ This course is designed for beginner of Git & GitHub and assumed student who don
 1. Resolve conflict during merge
 
 ### Day Two Road Map
-1. Simple operation of GitHub
- - branch
- - pull request 
- - merge pull request
+1. Simple operation of GitHub: branch, pull request, merge pull request
 1. How to control source code update on protected branch with story and case study
-1. Go through other element in http://winson.li
-1. Organization set up about GitHub
+1. Go through rest of elements in http://winson.li
+1. Organization setup about GitHub
 
 
 
