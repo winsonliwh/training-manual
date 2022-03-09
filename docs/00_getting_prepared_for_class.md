@@ -75,6 +75,7 @@ We will use this interactive gaming tools to play with git command:
 ### FAQ
 #### Can we use Visual Studio Code instead of GitPod Code?
 - Yes, sure as you have installed git while using Visual Studio Code.
+
 #### What is the different between "master" branch & "main" branch?
 - "master" is old name and "main" is new name. The main branch has already replaced all new github repos as the main branch. You can read up on it [here](https://github.com/github/renaming). There is no actual difference between main and master, it's just the name of the default branch.
 
@@ -84,7 +85,6 @@ We will use this interactive gaming tools to play with git command:
 #### What is the meaning of "origin" in "origin/main"?
 - The term "git origin main" is used in the context of a remote repository. It is used to deal with the remote repository. The term origin comes from **where repository original situated** and main stands for the main branch.
 
-
 #### How to handle the configuration info or any sensitive info in git? Should we skip import them to GitHub? 
 - [Cheat Sheet: 10 GitHub Security Best Practices](https://snyk.io/blog/ten-git-hub-security-best-practices/)
 
@@ -92,17 +92,16 @@ We will use this interactive gaming tools to play with git command:
 - [Difference Between GIT and SVN](https://www.geeksforgeeks.org/difference-between-git-and-svn/?ref=lbp)
 
 #### What is the difference between fetch and pull?
-- pull = fetch + merge; git fetch is the command that tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available). git pull on the other hand does that AND brings (copy) those changes from the remote repository.
+- ```pull``` = ```fetch``` + ```merge```; ```git fetch``` is the command that tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available). ```git pull``` on the other hand does that AND brings (copy) those changes from the remote repository.
 
 #### What is the advantage of github over TortoiseGit? Is it only UI difference?
+- GitHub belongs to **"Code Collaboration & Version Control"** category of the tech stack, while **TortoiseGit can be primarily classified under "Git Tools"**.
+
 - **What is GitHub?** Powerful collaboration, review, and code management for open source and private development projects. GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together.
 
 - **What is TortoiseGit?** The Power of Git in a Windows Shell. It is a Git revision control client, implemented as a Windows shell extension and based on TortoiseSVN. It is free software released under the GNU General Public License.
-
-- GitHub belongs to **"Code Collaboration & Version Control"** category of the tech stack, while **TortoiseGit can be primarily classified under "Git Tools"**.
-
 #### What is the diff between HEAD and master branches?
-- The simple answer is that HEAD is a **pointer/label** to the most recent commit of the branch you are currently on. master is the default branch created when you initialized a git repository (e.g. git init ). You can delete the master branch (e.g. git branch -D master ). You cannot delete the HEAD pointer.
+- The simple answer is that HEAD is a **pointer/label** to the most recent commit of the branch you are currently on. master is the default branch created when you initialized a git repository (e.g. ```git init``` ). You can delete the master branch (e.g. ```git branch -D master``` ). You cannot delete the HEAD pointer.
 #### What is the difference between ```git add .``` and ```git add -u```?
 - ```git add .``` will ad everything in current directory.
 - ```git add -u``` only adds currently tracked files (which have been modified) to the staging area and also checks if they have been deleted (if yes, they are removed from staging area). This means that it does not stage new files.
