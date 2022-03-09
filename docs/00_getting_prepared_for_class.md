@@ -56,16 +56,25 @@ For this class, we use www.menti.com to get your answer for questions / polls / 
  [menti.com with code 8365 0686](https://www.menti.com/uar1cewy65)
  - Or you can visit [www.menti.com](https://www.menti.com/) and input the code (8365 0686) manually after open the web page.
  - It is highly recommend to use mobile to scran below QR Code.
- ![menti.com with code 8365 0686 QR Code](./img/qr-menti-class2.png){: .center}
+ ![menti.com with code 8365 0686 QR Code](./img/qr-menti-class2.png)
 
 
 ---
 ### Gaming Tools
+We will use this interactive gaming tools to play with git command:
+ - [https://learngitbranching.winson.li](https://learngitbranching.winson.li)
 
+### FAQ
+#### What is the different between "master" branch & "main' branch?
+- "master" is old name and "main" is new name. The main branch has already replaced all new github repos as the main branch. You can read up on it [here](https://github.com/github/renaming). There is no actual difference between main and master, it's just the name of the default branch.
+#### Can we use Visual Studio Code instead of GitPod Code?
+- Yes, sure as you have installed git while using Visual Studio Code.
+#### 
 ---
 ### Exploring
 
 Congratulations! You should now have a room number. If you still have any issue, please use our WhatsApp support group:
 
 - **[WhatsApp Support Group](https://chat.whatsapp.com/BYaHI6j9q34HbYRLRF0TpV)** - QA & Support during the class and after the class.
-![WhatsApp Support Group QR Code](./img/qr-whatsapp-class2-support.png){: .center}
+![WhatsApp Support Group QR Code](./img/qr-whatsapp-class2-support.png)
+- **[Video play list for this course](https://www.youtube.com/watch?v=GBRIxmKRPGA&list=PLg7s6cbtAD16Pgp6WIVfX4VsGI-xyWkMz&index=4)**
