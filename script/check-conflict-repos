@@ -37,10 +37,12 @@ function GetNames() {
   for i in "${COLLABS[@]}"; do
     if
       # Check for element
+      #
       ContainsElement "$i" "$OWNERS_ARRAY"
     then
       # Check the repo
-      CheckRepo "$i"
+      #CheckRepo "$i"
+      CheckRepo "WinsonLiGeneration"
     fi
   done
 }
@@ -62,26 +64,28 @@ function CheckRepo() {
       echo "pr$i: merged" >>"conflict-activity-$STUDENT.json"
       if [ "$i" == "1" ]; then
         # Search for conflict markers
-        START_MARK1=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/index.html" | grep -c -i '<<<<<<<') >>log.out 2>&1
+        # Winson: no need to check CHECKING_INDEX_HTML=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/index.html")
+        #echo $CHECKING_INDEX_HTML >> checking_index_html.out
+        #START_MARK1=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/index.html" | grep -c -i '<<<<<<<') >>log.out 2>&1
         echo "search for <<<<<<< found $START_MARK1"
-        DIV_MARK1=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/css/index.html" | grep -c -i '=======') >>log.out 2>&1
+        DIV_MARK1=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/css/index.html" | grep -c -i '=======') >>log.out 2>&1
         echo "search for ======= found $DIV_MARK1"
-        END_MARK1=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/css/index.html" | grep -c -i '>>>>>>>') >>log.out 2>&1
+        END_MARK1=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/css/index.html" | grep -c -i '>>>>>>>') >>log.out 2>&1
         echo "search for >>>>>>> found $END_MARK1"
-        START_MARK2=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/play/manual/manual.html" | grep -c -i '<<<<<<<') >>log.out 2>&1
+        START_MARK2=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/play/manual/manual.html" | grep -c -i '<<<<<<<') >>log.out 2>&1
         echo "search for <<<<<<< found $START_MARK2"
-        DIV_MARK2=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/play/manual/manual.html" | grep -c -i '=======') >>log.out 2>&1
+        DIV_MARK2=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/play/manual/manual.html" | grep -c -i '=======') >>log.out 2>&1
         echo "search for ======= found $DIV_MARK2"
-        END_MARK2=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/play/manual/manual.html" | grep -c -i '>>>>>>>') >>log.out 2>&1
+        END_MARK2=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/play/manual/manual.html" | grep -c -i '>>>>>>>') >>log.out 2>&1
         echo "search for >>>>>>> found $END_MARK2"
-        START_MARK3=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/play/mini/mini_bored.html" | grep -c -i '<<<<<<<') >>log.out 2>&1
+        START_MARK3=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/play/mini/mini_bored.html" | grep -c -i '<<<<<<<') >>log.out 2>&1
         echo "search for <<<<<<< found $START_MARK3"
-        DIV_MARK3=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/play/mini/mini_bored.html" | grep -c -i '=======') >>log.out 2>&1
+        DIV_MARK3=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/play/mini/mini_bored.html" | grep -c -i '=======') >>log.out 2>&1
         echo "search for ======= found $DIV_MARK3"
-        END_MARK3=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/css/play/mini/mini_bored.html" | grep -c -i '>>>>>>>') >>log.out 2>&1
+        END_MARK3=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/css/play/mini/mini_bored.html" | grep -c -i '>>>>>>>') >>log.out 2>&1
         echo "search for >>>>>>> found $END_MARK3"
         # Make sure play/manual/manual.html still exists
-        CHECK_FILE=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://api.github.com/search/code?q=manual.html+in:path+repo:githubschool/$STUDENT_REPO" | jq .total_count) >>log.out 2>&1
+        CHECK_FILE=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://api.github.com/search/code?q=manual.html+in:path+repo:$CLASS_ORG/$STUDENT_REPO" | jq .total_count) >>log.out 2>&1
         # echo "search for play/manual/manual.html returned $CHECK_FILE"
         {
           echo "The answers are represent starting conflict markets, middle conflict markers, ending conflict markers, and if the deleted file is present (null = not present, 0 = present with another unnecessary file, 1 = correct files present)."
@@ -90,21 +94,21 @@ function CheckRepo() {
         } >>"conflict-activity-$STUDENT.json"
       elif [ "$i" == "2" ]; then
         # Search for conflict markers
-        START_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/css/index.css" | grep -c -i '<<<<<<<') >>log.out 2>&1
+        START_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/css/index.css" | grep -c -i '<<<<<<<') >>log.out 2>&1
         echo "search for <<<<<<< found $START_MARK"
-        DIV_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/css/index.css" | grep -c -i '=======') >>log.out 2>&1
+        DIV_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/css/index.css" | grep -c -i '=======') >>log.out 2>&1
         echo "search for ======= found $DIV_MARK"
-        END_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/css/index.css" | grep -c -i '>>>>>>>') >>log.out 2>&1
+        END_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/css/index.css" | grep -c -i '>>>>>>>') >>log.out 2>&1
         echo "search for >>>>>>> found $END_MARK"
         echo "correct answers would be: 0,0,0" >>"conflict-activity-$STUDENT.json"
         echo "checks$i:$START_MARK,$DIV_MARK,$END_MARK" >>"conflict-activity-$STUDENT.json"
       else
         # Search for conflict markers
-        START_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/README.md" | grep -c -i '<<<<<<<') >>log.out 2>&1
+        START_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/README.md" | grep -c -i '<<<<<<<') >>log.out 2>&1
         echo "search for <<<<<<< found $START_MARK"
-        DIV_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/README.md" | grep -c -i '=======') >>log.out 2>&1
+        DIV_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/README.md" | grep -c -i '=======') >>log.out 2>&1
         echo "search for ======= found $DIV_MARK"
-        END_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/githubschool/$STUDENT_REPO/main/README.md" | grep -c -i '>>>>>>>') >>log.out 2>&1
+        END_MARK=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://raw.githubusercontent.com/$CLASS_ORG/$STUDENT_REPO/main/README.md" | grep -c -i '>>>>>>>') >>log.out 2>&1
         echo "search for >>>>>>> found $END_MARK"
         echo "correct answers would be: 0,0,0" >>"conflict-activity-$STUDENT.json"
         echo "checks$i:$START_MARK,$DIV_MARK,$END_MARK" >>"conflict-activity-$STUDENT.json"

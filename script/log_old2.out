@@ -1,0 +1,160 @@
+HTTP/2 200 
+server: GitHub.com
+date: Sun, 16 Jan 2022 14:33:40 GMT
+content-type: application/json; charset=utf-8
+content-length: 2587
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP
+etag: "26e02843ac9d9f6eaa01bc12b50fa69c01570b670ceab3c801c9a6b3e1a727f5"
+x-oauth-scopes: admin:public_key, admin:repo_hook, delete_repo, read:org, repo
+x-accepted-oauth-scopes: 
+github-authentication-token-expiration: 2022-03-10 11:46:35 UTC
+x-github-media-type: github.v3; format=json
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4960
+x-ratelimit-reset: 1642345904
+x-ratelimit-used: 40
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+vary: Accept-Encoding, Accept, X-Requested-With
+x-github-request-id: D4D7:63A9:6D361A:814CD8:61E42CC3
+
+{
+  "content": {
+    "name": "conflict-activity-WinsonLiGeneration.json",
+    "path": "_grades/conflict-activity-WinsonLiGeneration.json",
+    "sha": "4546eaf115702e15b28d31b08edd30eed4599022",
+    "size": 473,
+    "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/contents/_grades/conflict-activity-WinsonLiGeneration.json?ref=main",
+    "html_url": "https://github.com/winson-itpro2-com/dayOneRepo/blob/main/_grades/conflict-activity-WinsonLiGeneration.json",
+    "git_url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/blobs/4546eaf115702e15b28d31b08edd30eed4599022",
+    "download_url": "https://raw.githubusercontent.com/winson-itpro2-com/dayOneRepo/main/_grades/conflict-activity-WinsonLiGeneration.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/contents/_grades/conflict-activity-WinsonLiGeneration.json?ref=main",
+      "git": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/blobs/4546eaf115702e15b28d31b08edd30eed4599022",
+      "html": "https://github.com/winson-itpro2-com/dayOneRepo/blob/main/_grades/conflict-activity-WinsonLiGeneration.json"
+    }
+  },
+  "commit": {
+    "sha": "f0e6643507217a5d9839f481b960793ab9148acc",
+    "node_id": "C_kwDOGq7D19oAKGYwZTY2NDM1MDcyMTdhNWQ5ODM5ZjQ4MWI5NjA3OTNhYjkxNDhhY2M",
+    "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/commits/f0e6643507217a5d9839f481b960793ab9148acc",
+    "html_url": "https://github.com/winson-itpro2-com/dayOneRepo/commit/f0e6643507217a5d9839f481b960793ab9148acc",
+    "author": {
+      "name": "winsonliwh",
+      "email": "winsonliwh@gmail.com",
+      "date": "2022-01-16T14:33:40Z"
+    },
+    "committer": {
+      "name": "winsonliwh",
+      "email": "winsonliwh@gmail.com",
+      "date": "2022-01-16T14:33:40Z"
+    },
+    "tree": {
+      "sha": "56d77d20c2ca3a55bcccfb7b43997a7d87efda17",
+      "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/trees/56d77d20c2ca3a55bcccfb7b43997a7d87efda17"
+    },
+    "message": "Graded conflict activity for WinsonLiGeneration",
+    "parents": [
+      {
+        "sha": "904fc717290d2c5feb319f86072d4df15c02b693",
+        "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/commits/904fc717290d2c5feb319f86072d4df15c02b693",
+        "html_url": "https://github.com/winson-itpro2-com/dayOneRepo/commit/904fc717290d2c5feb319f86072d4df15c02b693"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  }
+}
+HTTP/2 201 
+server: GitHub.com
+date: Sun, 16 Jan 2022 15:39:35 GMT
+content-type: application/json; charset=utf-8
+content-length: 2425
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP
+etag: "7a8a82c17d3634e677b8fb9dd48fbf88e057da2006dd36ae0f986446d3def88a"
+x-oauth-scopes: admin:public_key, admin:repo_hook, delete_repo, read:org, repo
+x-accepted-oauth-scopes: 
+github-authentication-token-expiration: 2022-03-10 11:46:35 UTC
+x-github-media-type: github.v3; format=json
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4993
+x-ratelimit-reset: 1642350584
+x-ratelimit-used: 7
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+vary: Accept-Encoding, Accept, X-Requested-With
+x-github-request-id: D997:31F2:992D39:B0FDEF:61E43C36
+
+{
+  "content": {
+    "name": "caption-activity-.yml",
+    "path": "_grades/caption-activity-.yml",
+    "sha": "ed97d539c095cf1413af30cc23dea272095b97dd",
+    "size": 4,
+    "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/contents/_grades/caption-activity-.yml?ref=main",
+    "html_url": "https://github.com/winson-itpro2-com/dayOneRepo/blob/main/_grades/caption-activity-.yml",
+    "git_url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/blobs/ed97d539c095cf1413af30cc23dea272095b97dd",
+    "download_url": "https://raw.githubusercontent.com/winson-itpro2-com/dayOneRepo/main/_grades/caption-activity-.yml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/contents/_grades/caption-activity-.yml?ref=main",
+      "git": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/blobs/ed97d539c095cf1413af30cc23dea272095b97dd",
+      "html": "https://github.com/winson-itpro2-com/dayOneRepo/blob/main/_grades/caption-activity-.yml"
+    }
+  },
+  "commit": {
+    "sha": "84ecb0610e88fc63a290f9c36b6498a3fe7a6ccc",
+    "node_id": "C_kwDOGq7D19oAKDg0ZWNiMDYxMGU4OGZjNjNhMjkwZjljMzZiNjQ5OGEzZmU3YTZjY2M",
+    "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/commits/84ecb0610e88fc63a290f9c36b6498a3fe7a6ccc",
+    "html_url": "https://github.com/winson-itpro2-com/dayOneRepo/commit/84ecb0610e88fc63a290f9c36b6498a3fe7a6ccc",
+    "author": {
+      "name": "winsonliwh",
+      "email": "winsonliwh@gmail.com",
+      "date": "2022-01-16T15:39:35Z"
+    },
+    "committer": {
+      "name": "winsonliwh",
+      "email": "winsonliwh@gmail.com",
+      "date": "2022-01-16T15:39:35Z"
+    },
+    "tree": {
+      "sha": "27ca10f3b658151ed3c64d870fea174dc39e348c",
+      "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/trees/27ca10f3b658151ed3c64d870fea174dc39e348c"
+    },
+    "message": "Graded caption activity for",
+    "parents": [
+      {
+        "sha": "f0e6643507217a5d9839f481b960793ab9148acc",
+        "url": "https://api.github.com/repos/winson-itpro2-com/dayOneRepo/git/commits/f0e6643507217a5d9839f481b960793ab9148acc",
+        "html_url": "https://github.com/winson-itpro2-com/dayOneRepo/commit/f0e6643507217a5d9839f481b960793ab9148acc"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  }
+}

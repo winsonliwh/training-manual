@@ -31,10 +31,10 @@ function GetNames() {
 function CleanUpRepo() {
   # Get the Repo
   REPO=$1
-
+  echo $(curl -s -S -i -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$REPO") >> cleanlog.out
   # Get repo status
   REPO_STATUS=$(curl -s -S -i -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$REPO" | grep "^Status:") >>log.out 2>&1
-
+  echo $REPO_STATUS
   # Check the return
   if
     echo "$REPO_STATUS" | grep -iq "200"

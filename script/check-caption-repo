@@ -47,10 +47,12 @@ function CheckRepo() {
   for i in "${PULLS_NUMBERS[@]}"; do
     # Give credit to the author
     PR_AUTHOR=$(curl --fail -k -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/pulls/$i" | jq .user.login) >>log.out 2>&1
-
+echo "PULLS_NUMBERS"
+echo $i
+echo $PR_AUTHOR
     # Load the error code
     ERROR_CODE=$?
-
+echo $ERROR_CODE
     # Check the shell for errors
     if [ $ERROR_CODE -ne 0 ]; then
       echo "ERROR! Failed curl!"
@@ -64,13 +66,15 @@ function CheckRepo() {
     then
       PR_AUTHOR=$(echo "$PR_AUTHOR" | (sed -e 's/^"//' -e 's/"$//'))
       echo "prAuth: https://$INSTANCE_URL/$CLASS_ORG/$COLLAB_REPO/pull/$i" >>"caption-activity-$PR_AUTHOR.yml"
+      cat "caption-activity-$PR_AUTHOR.yml"
     fi
     # Get authors of reviews on this PR
     REVIEW_AUTH=$(curl --fail -k -s -S -H "Accept: application/vnd.github.v3+json" -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/pulls/$i/reviews" | jq '.[] | .user.login') >>log.out 2>&1
-
+echo "REVIEW_AUTH"
+echo $i
     # Load the error code
     ERROR_CODE=$?
-
+echo $ERROR_CODE
     # Check the shell for errors
     if [ $ERROR_CODE -ne 0 ]; then
       echo "ERROR! Failed curl!"
@@ -86,6 +90,7 @@ function CheckRepo() {
       then
         z=$(echo "$z" | (sed -e 's/^"//' -e 's/"$//'))
         echo "REVIEW_AUTH: https://$INSTANCE_URL/$CLASS_ORG/$COLLAB_REPO/pull/$i" >>"caption-activity-$z.yml"
+        cat "caption-activity-$z.yml"
       fi
     done
   done
@@ -107,8 +112,15 @@ function SendFiles() {
       NEW_FILE=$(cat "caption-activity-$i.yml" | base64)
       # Does the file already exist?
       STATUS=$(curl -s -S -i -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/contents/_grades/caption-activity-$i.yml" | grep "^Status:") >>log.out 2>&1
+      echo $TOKEN_OWNER
+      echo $TEACHER_PAT
+      echo "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/contents/_grades/caption-activity-$i.yml"
+      echo "STATUS: # Does the file already exist?"
+      echo $STATUS
       if echo "$STATUS" | grep -iq "404"; then
         # Create the file on the repo
+        cat "caption-activity-$i.yml"
+        echo "Cannot find above file in repo"
         curl --fail -k -s -S -i -u "$TOKEN_OWNER:$TEACHER_PAT" -d "{ \"path\": \"_grades/caption-activity-$i.yml\", \"message\": \"Graded caption activity for $i\", \"content\": \"$NEW_FILE\"}" -X PUT "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/contents/_grades/caption-activity-$i.yml" >>log.out 2>&1
       else
         # Get the SHA
@@ -126,6 +138,9 @@ function SendFiles() {
 # Get name of collaborators from day 1
 {
   COLLABS=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/collaborators?per_page=100" | jq '.[] | .login')
+  echo "# Get name of collaborators from day 1"
+  echo $COLLABS
+  #Winson: above COLLABS has problem that it will insert \n between element, such that, winsonliwh\nWinsonLiGeneration
   OWNERS_ARRAY=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/orgs/$CLASS_ORG/members?role=admin" | jq '.[] | .login')
   PULLS_NUMBERS=$(curl -s -S -u "$TOKEN_OWNER:$TEACHER_PAT" -X GET "https://$INSTANCE_URL/repos/$CLASS_ORG/$COLLAB_REPO/pulls?per_page=100" | jq '.[] | .number')
 } >>log.out 2>&1
