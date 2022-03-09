@@ -60,9 +60,10 @@ For this class, we use www.menti.com to get your answer for questions / polls / 
 
 
 ---
-### Gaming Tools
+### Gaming Tools & Interactive Cheat Sheet
 We will use this interactive gaming tools to play with git command:
  - [https://learngitbranching.winson.li](https://learngitbranching.winson.li)
+ - [https://ndpsoftware.com/git-cheatsheet.html](https://ndpsoftware.com/git-cheatsheet.html#loc=index)
 
 ### FAQ
 #### What is the different between "master" branch & "main' branch?
@@ -77,4 +78,23 @@ Congratulations! You should now have a room number. If you still have any issue,
 
 - **[WhatsApp Support Group](https://chat.whatsapp.com/BYaHI6j9q34HbYRLRF0TpV)** - QA & Support during the class and after the class.
 ![WhatsApp Support Group QR Code](./img/qr-whatsapp-class2-support.png)
-- **[Video play list for this course](https://www.youtube.com/watch?v=GBRIxmKRPGA&list=PLg7s6cbtAD16Pgp6WIVfX4VsGI-xyWkMz&index=4)**
+- **[Video play list for this course](https://www.youtube.com/watch?v=GBRIxmKRPGA&list=PLg7s6cbtAD16Pgp6WIVfX4VsGI-xyWkMz&index=4)** - 20 Videos including: 
+What is GitHub,
+Github Flow,
+Working Locally,
+Create Local Commits,
+Open a Pull Request,
+Merge the Pull Request,
+Syncing the Local Repository,
+Logs and Creating Aliases,
+Introduction to Organizations, Forks and GitHub Pages,
+Workflow Review,
+Simple Conflict,
+Fix the Game,
+Merge Conflict with Multiple Remotes,
+Crafting Atomic Commits,
+Basics of Git Internals,
+Reset,
+Reflog and Cherry Pick,
+Rebase and 
+Commit Amend
