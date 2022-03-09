@@ -19,11 +19,11 @@ For this class, we will use zoom for our meeting:
 ### Where to reply questions, polls, quizzes? What is menti.com?
 
 For this class, we use www.menti.com to get your answer for questions / polls / quizzes. 
- - Here is the URL with our code (5137 9675):
- [menti.com with code 5137 9675](https://www.menti.com/scoof3ghqa)
+ - Here is the URL with our code (8365 0686):
+ [menti.com with code 8365 0686](https://www.menti.com/uar1cewy65)
  - Or you can visit [www.menti.com](https://www.menti.com/) and input the code (5137 9675) manually after open the web page.
  - It is highly recommend to use mobile to scran below QR Code.
- ![menti.com with code 5137 9675 QR Code](./img/qr-menti-class1.png)
+ ![menti.com with code 8365 0686 QR Code](./img/qr-menti-class2.png)
 
 
 ---
