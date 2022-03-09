@@ -33,11 +33,6 @@ This course is designed for beginner of Git & GitHub and assumed student who don
 1. Go through rest of elements in http://winson.li
 1. Organization setup about GitHub
 
-
-
-
-
-
 Here are some links you should know to getting support or prepared before the class.
 
 <!-- toc -->
@@ -59,13 +54,15 @@ For this class, we will use zoom for our meeting:
 For this class, we use www.menti.com to get your answer for questions / polls / quizzes. 
  - Here is the URL with our code (8365 0686):
  [menti.com with code 8365 0686](https://www.menti.com/uar1cewy65)
- - Or you can visit [www.menti.com](https://www.menti.com/) and input the code (5137 9675) manually after open the web page.
+ - Or you can visit [www.menti.com](https://www.menti.com/) and input the code (8365 0686) manually after open the web page.
  - It is highly recommend to use mobile to scran below QR Code.
  ![menti.com with code 8365 0686 QR Code](./img/qr-menti-class2.png){: .center}
 
 
 ---
+### Gaming Tools
 
+---
 ### Exploring
 
 Congratulations! You should now have a room number. If you still have any issue, please use our WhatsApp support group:
