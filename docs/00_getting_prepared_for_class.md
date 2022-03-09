@@ -73,7 +73,7 @@ We will use this interactive gaming tools to play with git command:
 
 ---
 ### FAQ
-#### What is the different between "master" branch & "main' branch?
+#### What is the different between "master" branch & "main" branch?
 - "master" is old name and "main" is new name. The main branch has already replaced all new github repos as the main branch. You can read up on it [here](https://github.com/github/renaming). There is no actual difference between main and master, it's just the name of the default branch.
 #### Can we use Visual Studio Code instead of GitPod Code?
 - Yes, sure as you have installed git while using Visual Studio Code.
@@ -81,7 +81,7 @@ We will use this interactive gaming tools to play with git command:
 - Please wait few mins if we are clicking the same thing together.
 
 #### Can you explain more about git diff staged HEAD?
-- git diff --staged will only show changes to files in the "staged" area. git diff HEAD will show all changes to tracked files. If you have all changes staged for commit, then both commands will output the same.
+- ```git diff --staged``` will only show changes to files in the "staged" area. ```git diff HEAD``` will show all changes to tracked files. If you have all changes staged for commit, then both commands will output the same.
 #### What is the meaning of ‘origin’ in ‘origin/main’?
 - The term "git origin main" is used in the context of a remote repository. It is used to deal with the remote repository. The term origin comes from **where repository original situated** and main stands for the main branch.
 
