@@ -73,20 +73,17 @@ We will use this interactive gaming tools to play with git command:
 
 ---
 ### FAQ
-#### What is the different between "master" branch & "main" branch?
-- "master" is old name and "main" is new name. The main branch has already replaced all new github repos as the main branch. You can read up on it [here](https://github.com/github/renaming). There is no actual difference between main and master, it's just the name of the default branch.
 #### Can we use Visual Studio Code instead of GitPod Code?
 - Yes, sure as you have installed git while using Visual Studio Code.
+#### What is the different between "master" branch & "main" branch?
+- "master" is old name and "main" is new name. The main branch has already replaced all new github repos as the main branch. You can read up on it [here](https://github.com/github/renaming). There is no actual difference between main and master, it's just the name of the default branch.
+
 #### Is it normal for the Gitpod long loading time with message "Pulling container image …"?
 - Please wait few mins if we are clicking the same thing together.
 
-#### Can you explain more about git diff staged HEAD?
-- ```git diff --staged``` will only show changes to files in the "staged" area. ```git diff HEAD``` will show all changes to tracked files. If you have all changes staged for commit, then both commands will output the same.
-#### What is the meaning of ‘origin’ in ‘origin/main’?
+#### What is the meaning of "origin" in "origin/main"?
 - The term "git origin main" is used in the context of a remote repository. It is used to deal with the remote repository. The term origin comes from **where repository original situated** and main stands for the main branch.
 
-#### What is the diff between HEAD and master branches?
-- The simple answer is that HEAD is a **pointer/label** to the most recent commit of the branch you are currently on. master is the default branch created when you initialized a git repository (e.g. git init ). You can delete the master branch (e.g. git branch -D master ). You cannot delete the HEAD pointer.
 
 #### How to handle the configuration info or any sensitive info in git? Should we skip import them to GitHub? 
 - [Cheat Sheet: 10 GitHub Security Best Practices](https://snyk.io/blog/ten-git-hub-security-best-practices/)
@@ -104,9 +101,14 @@ We will use this interactive gaming tools to play with git command:
 
 - GitHub belongs to **"Code Collaboration & Version Control"** category of the tech stack, while **TortoiseGit can be primarily classified under "Git Tools"**.
 
+#### What is the diff between HEAD and master branches?
+- The simple answer is that HEAD is a **pointer/label** to the most recent commit of the branch you are currently on. master is the default branch created when you initialized a git repository (e.g. git init ). You can delete the master branch (e.g. git branch -D master ). You cannot delete the HEAD pointer.
 #### What is the difference between ```git add .``` and ```git add -u```?
 - ```git add .``` will ad everything in current directory.
 - ```git add -u``` only adds currently tracked files (which have been modified) to the staging area and also checks if they have been deleted (if yes, they are removed from staging area). This means that it does not stage new files.
+
+#### Can you explain more about git diff staged HEAD?
+- ```git diff --staged``` will only show changes to files in the "staged" area. ```git diff HEAD``` will show all changes to tracked files. If you have all changes staged for commit, then both commands will output the same.
 
 #### What is the difference between ```git diff --cached``` vs ```git diff --staged```?
 - Same: --staged is a synonym of --cached
