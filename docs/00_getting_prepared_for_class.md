@@ -108,6 +108,18 @@ We will use this interactive gaming tools to play with git command:
 - ```git add .``` will ad everything in current directory.
 - ```git add -u``` only adds currently tracked files (which have been modified) to the staging area and also checks if they have been deleted (if yes, they are removed from staging area). This means that it does not stage new files.
 
+#### What is the difference between ```git diff --cached``` vs ```git diff --staged```?
+- Same: --staged is a synonym of --cached
+
+#### What is the difference between ```git diff``` vs ```git diff --cached``` vs ```git diff HEAD```?
+- **tracked file**: It is any file which git tracks actively. For example:Files which are already commited or files present in staging area.
+
+- **untracked file**: A newly created file which is not under git's version control.
+- ```git diff```: It shows only those changes of **tracked files** which are present in **working directory**.
+
+- ```git diff --cached```: It shows only those changes of **tracked files** which are present in **staging area**.
+
+- ```git diff HEAD```: It shows all changes of tracked files which are present in **working directory** and **staging area**.
 
 ---
 ### Exploring
