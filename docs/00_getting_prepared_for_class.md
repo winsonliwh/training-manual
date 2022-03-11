@@ -1,4 +1,4 @@
-## Getting prepared for class2
+## Getting prepared for class3
 
 ## Where to get ppt slides?
 
