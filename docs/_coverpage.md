@@ -1,6 +1,6 @@
-![logo](./img/ITPro2_log.png ':no-zoom')
+![companylogo](./img/ITPro2_log.png ':no-zoom')
 # WHO IS ITPro2
- ITPro2 is the catalyst for agile industry.
+## ITPro2 is the catalyst for agile industry.
 Our mission is to advance the state of agile learning globally by:
 
 - Facilitating thought leadership
@@ -21,5 +21,6 @@ In pursuit of our mission, ITPro2 works with organizations to deliver their cour
 # About
 ## Winson Li
 CEO & Founder
-winson.li@itpro2.com
+<winson.li@itpro2.com>
+
 ![color](#f6f8fa)
