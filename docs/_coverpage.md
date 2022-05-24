@@ -15,7 +15,7 @@ Our mission is to advance the state of agile learning globally by:
 [PDF](book.pdf)
 
 # About
-## Winson Li, CEO & Founder
+## Winson Li, Chief Digital Transformation Officer(CDTO)
 <winson.li@itpro2.com>
 
 ![color](#f6f8fa)
